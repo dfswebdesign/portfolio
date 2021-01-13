@@ -1,6 +1,7 @@
 /* light blue #2b98f0 */
 * {
   padding: 0;
+
   margin: 0;
   box-sizing: border-box;
 }
@@ -140,8 +141,9 @@ nav ul li a:hover {
 /*#################BANNER#######################  */
 /* Creating Hero Image */
 #banner {
-  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
     url(../images/productivity-1995786_1920.jpg);
+
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
