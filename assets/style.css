@@ -134,7 +134,7 @@ nav ul li a:hover {
     padding: 10px !important;
   }
   nav-top {
-    padding: 10px;
+    padding: 40px;
   }
 }
 
@@ -169,6 +169,7 @@ nav ul li a:hover {
   margin: 20px 0 40px 0;
   text-transform: capitalize;
   font-size: 25px;
+  font-weight: 300;
 }
 
 #banner-box a {
@@ -192,7 +193,7 @@ nav ul li a:hover {
   border: 3px solid #f5f5f5;
 }
 
-/* ###################### TITLE ######################## */
+/* ################ TITLE ################# */
 
 .title {
   margin: 10px 0 40px 0;
@@ -219,6 +220,19 @@ nav ul li a:hover {
 /* ################## SKILLS ####################### */
 #skills {
   padding: 40px;
+}
+
+.skills-description {
+  font-size: 30px;
+  text-align: center;
+  color: #575757;
+}
+.skills-description p {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  color: #575757;
+  font-size: 25px;
 }
 
 .skill {
@@ -290,21 +304,38 @@ nav ul li a:hover {
 }
 
 #about-text,
-#about-video {
+#about-image {
   padding: 40px;
 }
 
+#about-image img {
+  width: 80%;
+  height: auto;
+}
+
 #about-text h2 {
-  color: #f5f5d5;
+  color: #575757;
   font-size: 35px;
 }
 
 #about-text p {
   margin: 20px 0;
+  font-size: 20px;
+}
+
+#about-text li {
+  line-height: 3em;
+  font-size: 18px;
+  list-style: none;
+}
+
+#about-text .far {
+  font-size: 20px;
 }
 
 #about-text a {
   display: inline-block;
+  margin: 40px auto;
   text-decoration: none;
   font-size: 30px;
   padding: 10px;
