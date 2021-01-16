@@ -8,7 +8,7 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background: #f5f5f5;
+  background: #ffffff;
 }
 
 #header {
@@ -201,7 +201,7 @@ nav ul li a:hover {
 }
 
 .title-text {
-  font-size: 60px;
+  font-size: 45px;
   text-transform: capitalize;
   color: #575757;
 }
@@ -220,6 +220,8 @@ nav ul li a:hover {
 /* ################## SKILLS ####################### */
 #skills {
   padding: 40px;
+  background: #ffffff;
+  margin-bottom: 50px;
 }
 
 .skills-description {
@@ -300,12 +302,14 @@ nav ul li a:hover {
 /* ################## About ####################### */
 #about {
   padding: 40px;
-  background: #c9c9c9;
+  background: url(/images/background-1.jpg);
+  /* background: #2fb414; */
 }
 
 #about-text,
 #about-image {
   padding: 40px;
+  color: #f5f5f5;
 }
 
 #about-image img {
@@ -314,7 +318,7 @@ nav ul li a:hover {
 }
 
 #about-text h2 {
-  color: #575757;
+  color: #ffffff;
   font-size: 35px;
 }
 
@@ -331,6 +335,7 @@ nav ul li a:hover {
 
 #about-text .far {
   font-size: 20px;
+  color: #ffffff;
 }
 
 #about-text a {
@@ -370,6 +375,7 @@ nav ul li a:hover {
 /* ############# Services ############## */
 #services {
   padding: 40px;
+  background-color: #ffffff;
 }
 .service {
   margin: 30px 0;
@@ -470,7 +476,7 @@ nav ul li a:hover {
   margin-bottom: 0;
   opacity: 0.8;
 }
-image-text h3 {
+.image-text h3 {
   text-transform: capitalize;
   font-size: 20px;
   margin-bottom: 5px;
@@ -542,10 +548,19 @@ image-text h3 {
 #numbers {
   padding: 40px;
 }
+
+.line {
+  color: rgb(0, 141, 255, 0.5);
+  border: 1px solid;
+  width: 75%px;
+  margin: 0 0 50px auto;
+}
 .number {
   margin: 20px 0;
   text-align: center;
   transition: transform 2s;
+  color: #395e7e;
+  margin: 50px 0;
 }
 .number:hover {
   transform: translateY(-10px);
@@ -553,11 +568,11 @@ image-text h3 {
 }
 
 .number .fas {
-  font-size: 60px;
+  font-size: 45px;
   color: #2b98f0;
 }
 .number h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin: 10px 0;
   font-weight: 900;
 }
@@ -593,11 +608,17 @@ image-text h3 {
 /* ########### Team Members ################# */
 #team {
   padding: 40px;
-  background: #959595;
+  background: url(../images/background-2.jpg);
+  /* background: #959595; */
+  margin-bottom: 10%;
 }
 .team-member {
   background: #f5f5d5;
   margin: 20px 0;
+}
+
+#team .title-text {
+  color: #ffffff;
 }
 
 .team-member img {
@@ -673,6 +694,10 @@ image-text h3 {
   margin: 20px 0;
 }
 
+#customers .title-text {
+  color: #fff;
+}
+
 .customer img {
   border-radius: 50%;
   max-width: 200px;
@@ -712,7 +737,11 @@ image-text h3 {
 #contact {
   padding: 40px;
   background: #2b98f0;
-  color: #f5f5d5;
+  color: #ffffff;
+}
+
+#contact .title-text {
+  color: #fff;
 }
 #contact .title-underline {
   border-color: #f5f5d5;
@@ -720,20 +749,20 @@ image-text h3 {
 .item-info {
   display: flex;
   margin: 20px 0;
-  font-size: 30px;
+  font-size: 20px;
 }
 .item-info .fa {
   margin-right: 20px;
 }
 form input {
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 10px 0;
-  font-size: 25px;
+  font-size: 20px;
   padding: 10px;
   background: transparent;
   border: none;
-  border-bottom: 4px solid #f5f5d5;
+  border-bottom: 2px solid #f5f5d5;
 }
 
 form input::placeholder {
