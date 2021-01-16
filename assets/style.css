@@ -271,6 +271,7 @@ nav ul li a:hover {
 /* ################## END SKILLS ####################### */
 
 /* Media for skills section  */
+
 @media screen and (min-width: 576px) {
   .skills-center {
     max-width: 90vw;
@@ -477,7 +478,7 @@ nav ul li a:hover {
   opacity: 0.8;
 }
 .image-text h3 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-size: 20px;
   margin-bottom: 5px;
   color: #f5f5d5;
@@ -547,6 +548,14 @@ nav ul li a:hover {
 /* ########### Numbers ################# */
 #numbers {
   padding: 40px;
+}
+
+.num-description {
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+  color: rgb(87, 87, 87);
+  font-size: 25px;
 }
 
 .line {
@@ -687,6 +696,7 @@ nav ul li a:hover {
 #customers {
   padding: 40px;
   background: #191919;
+  margin-bottom: 10%;
 }
 .customer {
   color: #f5f5f5;
