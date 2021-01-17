@@ -303,7 +303,7 @@ nav ul li a:hover {
 /* ################## About ####################### */
 #about {
   padding: 40px;
-  background: url(/images/background-1.jpg);
+  background: url(../images/background-1.jpg);
   /* background: #2fb414; */
 }
 
