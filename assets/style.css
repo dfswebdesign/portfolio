@@ -166,9 +166,11 @@ nav ul li a:hover {
 }
 
 .banner-subtitle {
-  margin: 20px 0 40px 0;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 20px;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
 }
 
