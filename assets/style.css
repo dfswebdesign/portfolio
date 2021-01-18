@@ -156,7 +156,11 @@ nav ul li a:hover {
   color: #f5f5f5;
   text-align: center;
   text-transform: capitalize;
+  font-size: 140px;
+}
+#banner-title {
   font-size: 40px;
+  margin-top: 50px;
 }
 
 .banner-underline {
@@ -166,9 +170,9 @@ nav ul li a:hover {
 }
 
 .banner-subtitle {
+  margin: 20px 0 40px 0;
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 20px;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 300;
@@ -176,8 +180,8 @@ nav ul li a:hover {
 
 #banner-box a {
   display: inline-block;
-  padding: 10px;
-  font-size: 40px;
+  padding: 10px 30px;
+  font-size: 25px;
   text-decoration: none;
   color: #f5f5f5;
   background: #2b98f0;
@@ -231,12 +235,15 @@ nav ul li a:hover {
   text-align: center;
   color: #575757;
 }
+
+.skills-description h2 {
+  font-size: 40px;
+}
 .skills-description p {
-  width: 60%;
-  margin: 20px auto;
+  margin: 0px auto;
   text-align: center;
   color: #575757;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .skill {
