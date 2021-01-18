@@ -156,7 +156,7 @@ nav ul li a:hover {
   color: #f5f5f5;
   text-align: center;
   text-transform: capitalize;
-  font-size: 140px;
+  font-size: 40px;
 }
 #banner-title {
   font-size: 40px;
@@ -170,9 +170,8 @@ nav ul li a:hover {
 }
 
 .banner-subtitle {
-  margin: 20px 0 40px 0;
-  width: 70%;
   margin: 0 auto;
+  width: 70%;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 300;
@@ -180,6 +179,7 @@ nav ul li a:hover {
 
 #banner-box a {
   display: inline-block;
+  margin-top: 20px;
   padding: 10px 30px;
   font-size: 25px;
   text-decoration: none;
