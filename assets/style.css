@@ -1,7 +1,6 @@
 /* light blue #2b98f0 */
 * {
   padding: 0;
-
   margin: 0;
   box-sizing: border-box;
 }
@@ -15,18 +14,20 @@ body {
   background: #ffffff;
 }
 
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 #header {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 75vh;
 }
 
 .logo-rd {
-  color: red;
-  font-weight: 700;
-  border-radius: 50%;
-  border: 1px solid #2b98f0;
-  padding: 1px;
+  color: #eee;
+  font-weight: 300;
 }
 nav {
   flex: 0 0 auto;
@@ -54,7 +55,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  color: #2b98f0;
+  color: #eee;
   background: transparent;
   text-decoration: none;
   padding: 10px;
@@ -75,11 +76,17 @@ nav ul li a:hover {
   /* padding: 10px 20px 20px 10px; */
 }
 #nav-top h3 {
-  font-size: 30px;
+  font-size: 25px;
   padding: 5px;
   color: #2b98f0;
   border: 3px solid;
   transition: color 2s ease background 2s ease;
+}
+
+#nav-top span {
+  color: white;
+  font-size: 25px;
+  padding: 5px;
 }
 
 #nav-top h3:hover {
@@ -167,10 +174,11 @@ nav ul li a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   align-items: center;
   justify-content: center;
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 }
 #banner-box {
   color: #f5f5f5;
@@ -245,35 +253,42 @@ nav ul li a:hover {
   border: 3px solid red;
 }
 
-/* ################## SKILLS ####################### */
-#skills {
-  padding: 40px;
+/* ################## SERVICES ####################### */
+#services {
+  padding: 60px;
   background: #ffffff;
   margin-bottom: 50px;
 }
 
-.skills-description {
+.services-description {
   font-size: 30px;
   text-align: center;
   color: #575757;
+  letter-spacing: 1.5px;
 }
 
-.skills-description h2 {
+.services-description h2 {
   font-size: 40px;
 }
-.skills-description p {
-  margin: 0px auto;
+.services-description p {
+  margin: 30px auto;
   text-align: center;
   color: #575757;
-  font-size: 20px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
 }
 
-.skill {
+.services-text {
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.service {
   text-align: center;
   margin: 20px 0;
 }
 
-.skill .fas {
+.service .fas {
   color: #2b98f0;
   padding: 20px;
   border-radius: 50%;
@@ -281,30 +296,35 @@ nav ul li a:hover {
   transition: transform 0.5s ease-in, background 0.5s ease, color 0.5s ease;
 }
 
-.skill .fas:hover {
+.service .fas:hover {
   transform: scale(0.7);
   background: #2b98f0;
   color: #f5f5f5;
 }
 
-.skill h3 {
+.service h3 {
   margin: 10px 0 15px 0;
   text-transform: capitalize;
   font-size: 30px;
   color: #2b98f0;
 }
+/* .services-description-subtext {
+  font-size: 24px;
+  margin-top: 25px;
+  
+} */
 
-.skill p {
+/* .service p {
   line-height: 1.5em;
   width: 75%;
   margin: 0 auto;
-}
+} */
 /* ################## END SKILLS ####################### */
 
-/* Media for skills section  */
+/* Media for services section  */
 
 @media screen and (min-width: 576px) {
-  .skills-center {
+  .services-center {
     max-width: 90vw;
     margin: 0 auto;
     display: flex;
@@ -312,13 +332,13 @@ nav ul li a:hover {
     flex-wrap: wrap;
   }
 
-  .skill {
+  .service {
     flex: 0 1 calc(50% - 1em);
   }
 }
 
 @media screen and (min-width: 992px) {
-  .skills-center {
+  .services-center {
     max-width: 90vw;
     margin: 0 auto;
     display: flex;
@@ -326,16 +346,21 @@ nav ul li a:hover {
     flex-wrap: wrap;
   }
 
-  .skill {
+  .service {
     flex: 0 1 calc(25% - 1em);
   }
 }
 
 /* ################## About ####################### */
 #about {
-  padding: 40px;
+  padding: 60px;
   background: url(../images/background-1.jpg);
   /* background: #2fb414; */
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.title-text-about {
+  color: #eee;
 }
 
 #about-text,
@@ -352,6 +377,11 @@ nav ul li a:hover {
 #about-text h2 {
   color: #ffffff;
   font-size: 35px;
+}
+
+.process {
+  font-size: 30px !important;
+  margin-top: 40px !important;
 }
 
 #about-text p {
@@ -387,6 +417,10 @@ nav ul li a:hover {
   background: transparent;
   border: 2px solid #f5f5d5;
 }
+
+.icon {
+  color: #fff;
+}
 /* Media query for about section */
 @media screen and (min-width: 776px) {
   #about {
@@ -405,36 +439,36 @@ nav ul li a:hover {
 /* ############# End About ############## */
 
 /* ############# Services ############## */
-#services {
-  padding: 40px;
+#skills {
+  padding: 60px;
   background-color: #ffffff;
 }
-.service {
+.skill {
   margin: 30px 0;
   display: flex;
 }
 
-.service-icon .fas,
+.skill-icon .fas,
 .far,
 .fab {
   font-size: 40px;
-  color: #2b98f0;
+  /* color: #eee; */
   margin-right: 20px;
 }
 
-.service-subtitle {
+.skill-subtitle {
   text-transform: capitalize;
   color: #2b98f0;
   font-size: 20px;
 }
-.service-icon .fas:hover,
+.skill-icon .fas:hover,
 .far:hover,
 .fab:hover,
 .service:hover .service-subtitle {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.service:hover .service-info {
+.skill:hover .service-info {
   color: rgb(124, 41, 41);
 }
 
@@ -442,19 +476,19 @@ nav ul li a:hover {
 
 /* Media Query For Service Section */
 @media screen and (min-width: 576px) {
-  .services-center {
+  .skills-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .service {
+  .skill {
     flex: 0 0 calc(50% - 1em);
   }
 }
 
 @media screen and (min-width: 972px) {
   /* 3 column on large screen */
-  .service {
+  .skill {
     flex: 0 0 calc(33.3% - 1em);
   }
 }
@@ -462,8 +496,21 @@ nav ul li a:hover {
 /* ################# Portfolio ###################*/
 
 #portfolio {
-  padding: 40px;
+  padding: 40px 0 150px;
   background: #ffffff;
+  background-image: url(/portfolio/images/background-2.jpg);
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+}
+
+.title-text-portfolio {
+  color: #eee;
+}
+
+.portfolio-text {
+  color: #eee;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .work {
@@ -547,7 +594,8 @@ nav ul li a:hover {
 
 .image-text {
   color: #f5f5d5;
-  font-size: 30px;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 .section-btn .far {
@@ -587,6 +635,10 @@ nav ul li a:hover {
   margin: 20px auto;
   text-align: center;
   color: rgb(87, 87, 87);
+  font-size: 25px;
+}
+
+.num-description-text {
   font-size: 25px;
 }
 
@@ -648,10 +700,11 @@ nav ul li a:hover {
 
 /* ########### Team Members ################# */
 #team {
-  padding: 40px;
-  background: url(../images/background-2.jpg);
+  padding: 60px 0 150px;
+  background: url(../images/background-3.jpg);
   /* background: #959595; */
   margin-bottom: 10%;
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 }
 .team-member {
   background: #f5f5d5;
